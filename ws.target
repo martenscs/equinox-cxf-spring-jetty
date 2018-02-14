@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="ws" sequenceNumber="83">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="cxf.feature.group" version="2.7.13"/>
+<unit id="cxf.source.feature.group" version="2.7.13"/>
+<unit id="cxf-core.feature.group" version="2.7.13"/>
+<unit id="cxf-core.source.feature.group" version="2.7.13"/>
+<repository location="http://p2.martenscs.net/cxf/2.7.13"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="aries.feature.group" version="3.0.1"/>
+<unit id="aries.source.feature.group" version="3.0.1"/>
+<unit id="org.apache.felix.webconsole.feature.group" version="4.0.0"/>
+<unit id="org.apache.felix.webconsole.source.feature.group" version="4.0.0"/>
+<repository location="http://p2.martenscs.net/karaf/framework/3.0.1"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="spring.feature.group" version="3.2.4.RELEASE"/>
+<unit id="spring.source.feature.group" version="3.2.4.RELEASE"/>
+<unit id="spring-dm.feature.group" version="1.2.1"/>
+<unit id="spring-dm.source.feature.group" version="1.2.1"/>
+<unit id="spring-dm-web.feature.group" version="1.2.1"/>
+<unit id="spring-dm-web.source.feature.group" version="1.2.1"/>
+<unit id="spring-integration.feature.group" version="3.0.5.RELEASE"/>
+<unit id="spring-integration.source.feature.group" version="3.0.5.RELEASE"/>
+<repository location="http://p2.martenscs.net/spring-integration/3.0.1.RELEASE"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.equinox.osgi.runtime.feature.group" version="0.0.1.201511122135"/>
+<unit id="org.eclipse.osgi.web.feature.group" version="1.0.0.201511122135"/>
+<unit id="org.eclipse.osgi.web.source.feature.group" version="1.0.0.201511122135"/>
+<repository location="http://p2.martenscs.net/equinox-runtime"/>
+</location>
+</locations>
+<includeBundles>
+<plugin id="ch.qos.logback.classic"/>
+<plugin id="ch.qos.logback.core"/>
+<plugin id="ch.qos.logback.slf4j"/>
+<plugin id="com.fasterxml.jackson.core.jackson-annotations"/>
+<plugin id="com.fasterxml.jackson.core.jackson-annotations.source"/>
+<plugin id="com.fasterxml.jackson.core.jackson-core"/>
+<plugin id="com.fasterxml.jackson.core.jackson-core.source"/>
+<plugin id="com.google.gson"/>
+<plugin id="com.google.guava" version="11.0.1"/>
+<plugin id="com.ibm.icu"/>
+<plugin id="com.jayway.jsonpath.json-path"/>
+<plugin id="com.jayway.jsonpath.json-path.source"/>
+<plugin id="hibernate-jpa-2.0-api"/>
+<plugin id="hibernate-jpa-2.0-api.source"/>
+<plugin id="jackson-core-asl" version="1.9.13"/>
+<plugin id="jackson-core-asl.source" version="1.9.13"/>
+<plugin id="jackson-databind"/>
+<plugin id="jackson-databind.source"/>
+<plugin id="jackson-mapper-asl" version="1.9.13"/>
+<plugin id="jackson-mapper-asl.source" version="1.9.13"/>
+<plugin id="javax.activation" version="1.1.0.v201108011116"/>
+<plugin id="javax.annotation" version="1.1.0.v201108011116"/>
+<plugin id="javax.el"/>
+<plugin id="javax.inject"/>
+<plugin id="javax.mail" version="1.4.7"/>
+<plugin id="javax.mail.source" version="1.4.4"/>
+<plugin id="javax.mail.source" version="1.4.7"/>
+<plugin id="javax.security.auth.message"/>
+<plugin id="javax.servlet" version="3.0.0.v201112011016"/>
+<plugin id="javax.servlet.jsp"/>
+<plugin id="javax.servlet.jsp.jstl"/>
+<plugin id="javax.transaction" version="1.1.1.v201105210645"/>
+<plugin id="javax.validation"/>
+<plugin id="jetty.home.bundle"/>
+<plugin id="joda-time"/>
+<plugin id="joda-time.source"/>
+<plugin id="net.minidev.json-smart"/>
+<plugin id="net.minidev.json-smart.source"/>
+<plugin id="org.apache.aries.blueprint.api" version="1.0.0"/>
+<plugin id="org.apache.aries.blueprint.api.source" version="1.0.0"/>
+<plugin id="org.apache.aries.blueprint.cm"/>
+<plugin id="org.apache.aries.blueprint.cm.source"/>
+<plugin id="org.apache.aries.blueprint.core"/>
+<plugin id="org.apache.aries.blueprint.core.compatibility"/>
+<plugin id="org.apache.aries.blueprint.core.compatibility.source"/>
+<plugin id="org.apache.aries.blueprint.core.source"/>
+<plugin id="org.apache.aries.proxy.api"/>
+<plugin id="org.apache.aries.proxy.api.source"/>
+<plugin id="org.apache.aries.proxy.impl"/>
+<plugin id="org.apache.aries.proxy.impl.source"/>
+<plugin id="org.apache.aries.quiesce.api"/>
+<plugin id="org.apache.aries.quiesce.api.source"/>
+<plugin id="org.apache.aries.util"/>
+<plugin id="org.apache.aries.util.source"/>
+<plugin id="org.apache.commons.fileupload"/>
+<plugin id="org.apache.commons.fileupload.source"/>
+<plugin id="org.apache.commons.io" version="1.4"/>
+<plugin id="org.apache.commons.io.source" version="1.4"/>
+<plugin id="org.apache.commons.lang" version="2.6"/>
+<plugin id="org.apache.commons.lang.source" version="2.6"/>
+<plugin id="org.apache.cxf.bundle"/>
+<plugin id="org.apache.cxf.bundle.source"/>
+<plugin id="org.apache.cxf.cxf-api"/>
+<plugin id="org.apache.cxf.cxf-api.source"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-coloc"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-coloc.source"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-object"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-object.source"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-soap"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-soap.source"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-xml"/>
+<plugin id="org.apache.cxf.cxf-rt-bindings-xml.source"/>
+<plugin id="org.apache.cxf.cxf-rt-core"/>
+<plugin id="org.apache.cxf.cxf-rt-core.source"/>
+<plugin id="org.apache.cxf.cxf-rt-databinding-jaxb"/>
+<plugin id="org.apache.cxf.cxf-rt-databinding-jaxb.source"/>
+<plugin id="org.apache.cxf.cxf-rt-databinding-xmlbeans"/>
+<plugin id="org.apache.cxf.cxf-rt-databinding-xmlbeans.source"/>
+<plugin id="org.apache.cxf.cxf-rt-features-clustering"/>
+<plugin id="org.apache.cxf.cxf-rt-features-clustering.source"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-jaxrs"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-jaxrs.source"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-jaxws"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-jaxws.source"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-js"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-js.source"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-simple"/>
+<plugin id="org.apache.cxf.cxf-rt-frontend-simple.source"/>
+<plugin id="org.apache.cxf.cxf-rt-javascript"/>
+<plugin id="org.apache.cxf.cxf-rt-javascript.source"/>
+<plugin id="org.apache.cxf.cxf-rt-transports-http"/>
+<plugin id="org.apache.cxf.cxf-rt-transports-http-jetty"/>
+<plugin id="org.apache.cxf.cxf-rt-transports-http-jetty.source"/>
+<plugin id="org.apache.cxf.cxf-rt-transports-http.source"/>
+<plugin id="org.apache.cxf.cxf-rt-transports-local"/>
+<plugin id="org.apache.cxf.cxf-rt-transports-local.source"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-addr"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-addr.source"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-mex"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-mex.source"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-policy"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-policy.source"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-rm"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-rm.source"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-security"/>
+<plugin id="org.apache.cxf.cxf-rt-ws-security.source"/>
+<plugin id="org.apache.felix.bundlerepository"/>
+<plugin id="org.apache.felix.bundlerepository.source"/>
+<plugin id="org.apache.felix.eventadmin" version="1.2.14"/>
+<plugin id="org.apache.felix.gogo.command" version="0.10.0.v201209301215"/>
+<plugin id="org.apache.felix.gogo.runtime" version="0.10.0.v201209301036"/>
+<plugin id="org.apache.felix.gogo.shell"/>
+<plugin id="org.apache.felix.http.whiteboard"/>
+<plugin id="org.apache.felix.http.whiteboard.source"/>
+<plugin id="org.apache.felix.metatype"/>
+<plugin id="org.apache.felix.metatype.source"/>
+<plugin id="org.apache.felix.webconsole"/>
+<plugin id="org.apache.felix.webconsole.plugins.event"/>
+<plugin id="org.apache.felix.webconsole.plugins.event.source"/>
+<plugin id="org.apache.felix.webconsole.plugins.memoryusage"/>
+<plugin id="org.apache.felix.webconsole.plugins.memoryusage.source"/>
+<plugin id="org.apache.felix.webconsole.plugins.packageadmin"/>
+<plugin id="org.apache.felix.webconsole.plugins.packageadmin.source"/>
+<plugin id="org.apache.felix.webconsole.source"/>
+<plugin id="org.apache.geronimo.specs.geronimo-jms_1.1_spec" version="1.1.1"/>
+<plugin id="org.apache.geronimo.specs.geronimo-jms_1.1_spec.source" version="1.1.1"/>
+<plugin id="org.apache.httpcomponents.httpclient"/>
+<plugin id="org.apache.httpcomponents.httpclient.source"/>
+<plugin id="org.apache.httpcomponents.httpcore"/>
+<plugin id="org.apache.httpcomponents.httpcore.source"/>
+<plugin id="org.apache.jasper.glassfish"/>
+<plugin id="org.apache.jasper.glassfish.source"/>
+<plugin id="org.apache.mina.core"/>
+<plugin id="org.apache.mina.core.source"/>
+<plugin id="org.apache.neethi"/>
+<plugin id="org.apache.neethi.source"/>
+<plugin id="org.apache.santuario.xmlsec"/>
+<plugin id="org.apache.santuario.xmlsec.source"/>
+<plugin id="org.apache.servicemix.bundles.aopalliance" version="1.0.0.6"/>
+<plugin id="org.apache.servicemix.bundles.aopalliance.source" version="1.0.0.6"/>
+<plugin id="org.apache.servicemix.bundles.axiom-impl"/>
+<plugin id="org.apache.servicemix.bundles.axiom-impl.source"/>
+<plugin id="org.apache.servicemix.bundles.bcel"/>
+<plugin id="org.apache.servicemix.bundles.cglib" version="3.0.0.1"/>
+<plugin id="org.apache.servicemix.bundles.cglib.source" version="3.0.0.1"/>
+<plugin id="org.apache.servicemix.bundles.commons-codec"/>
+<plugin id="org.apache.servicemix.bundles.commons-httpclient"/>
+<plugin id="org.apache.servicemix.bundles.commons-httpclient.source"/>
+<plugin id="org.apache.servicemix.bundles.dom4j"/>
+<plugin id="org.apache.servicemix.bundles.dom4j.source"/>
+<plugin id="org.apache.servicemix.bundles.ehcache"/>
+<plugin id="org.apache.servicemix.bundles.ehcache.source"/>
+<plugin id="org.apache.servicemix.bundles.fastinfoset"/>
+<plugin id="org.apache.servicemix.bundles.fastinfoset.source"/>
+<plugin id="org.apache.servicemix.bundles.jaxb-impl"/>
+<plugin id="org.apache.servicemix.bundles.jaxb-xjc"/>
+<plugin id="org.apache.servicemix.bundles.jaxen"/>
+<plugin id="org.apache.servicemix.bundles.jaxen.source"/>
+<plugin id="org.apache.servicemix.bundles.jdom" version="1.1.2.1"/>
+<plugin id="org.apache.servicemix.bundles.jdom" version="2.0.5.1"/>
+<plugin id="org.apache.servicemix.bundles.jdom.source" version="1.1.2.1"/>
+<plugin id="org.apache.servicemix.bundles.jdom.source" version="2.0.5.1"/>
+<plugin id="org.apache.servicemix.bundles.opensaml"/>
+<plugin id="org.apache.servicemix.bundles.opensaml.source"/>
+<plugin id="org.apache.servicemix.bundles.rhino"/>
+<plugin id="org.apache.servicemix.bundles.rhino.source"/>
+<plugin id="org.apache.servicemix.bundles.wsdl4j" version="1.6.3.1"/>
+<plugin id="org.apache.servicemix.bundles.wsdl4j.source" version="1.6.3.1"/>
+<plugin id="org.apache.servicemix.bundles.xalan"/>
+<plugin id="org.apache.servicemix.bundles.xalan.source"/>
+<plugin id="org.apache.servicemix.bundles.xerces"/>
+<plugin id="org.apache.servicemix.bundles.xerces.source"/>
+<plugin id="org.apache.servicemix.bundles.xmlbeans"/>
+<plugin id="org.apache.servicemix.bundles.xmlbeans.source"/>
+<plugin id="org.apache.servicemix.bundles.xmlresolver"/>
+<plugin id="org.apache.servicemix.bundles.xmlresolver.source"/>
+<plugin id="org.apache.servicemix.specs.jaxb-api-2.2" version="2.2.0"/>
+<plugin id="org.apache.servicemix.specs.jaxb-api-2.2.source" version="2.2.0"/>
+<plugin id="org.apache.servicemix.specs.jsr339-api-m10"/>
+<plugin id="org.apache.servicemix.specs.jsr339-api-m10.source"/>
+<plugin id="org.apache.servicemix.specs.stax-api-1.0" version="2.2.0"/>
+<plugin id="org.apache.servicemix.specs.stax-api-1.0.source" version="2.2.0"/>
+<plugin id="org.apache.taglibs.standard.glassfish"/>
+<plugin id="org.apache.taglibs.standard.glassfish.source"/>
+<plugin id="org.apache.ws.security.wss4j"/>
+<plugin id="org.apache.ws.security.wss4j.source"/>
+<plugin id="org.apache.ws.xmlschema.core" version="2.1.0"/>
+<plugin id="org.apache.ws.xmlschema.core.source" version="2.1.0"/>
+<plugin id="org.eclipse.core.commands"/>
+<plugin id="org.eclipse.core.contenttype"/>
+<plugin id="org.eclipse.core.expressions"/>
+<plugin id="org.eclipse.core.filesystem"/>
+<plugin id="org.eclipse.core.filesystem.win32.x86_64"/>
+<plugin id="org.eclipse.core.jobs"/>
+<plugin id="org.eclipse.core.resources"/>
+<plugin id="org.eclipse.core.runtime"/>
+<plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+<plugin id="org.eclipse.core.runtime.compatibility.registry"/>
+<plugin id="org.eclipse.core.variables"/>
+<plugin id="org.eclipse.equinox.app"/>
+<plugin id="org.eclipse.equinox.cm"/>
+<plugin id="org.eclipse.equinox.common"/>
+<plugin id="org.eclipse.equinox.console"/>
+<plugin id="org.eclipse.equinox.ds"/>
+<plugin id="org.eclipse.equinox.http.registry"/>
+<plugin id="org.eclipse.equinox.http.registry.source"/>
+<plugin id="org.eclipse.equinox.http.servlet"/>
+<plugin id="org.eclipse.equinox.http.servlet.source"/>
+<plugin id="org.eclipse.equinox.preferences"/>
+<plugin id="org.eclipse.equinox.registry"/>
+<plugin id="org.eclipse.equinox.util"/>
+<plugin id="org.eclipse.jetty.ajp"/>
+<plugin id="org.eclipse.jetty.ajp.source"/>
+<plugin id="org.eclipse.jetty.annotations"/>
+<plugin id="org.eclipse.jetty.annotations.source"/>
+<plugin id="org.eclipse.jetty.client"/>
+<plugin id="org.eclipse.jetty.client.source"/>
+<plugin id="org.eclipse.jetty.continuation" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.continuation.source" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.deploy"/>
+<plugin id="org.eclipse.jetty.deploy.source"/>
+<plugin id="org.eclipse.jetty.http" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.http.source" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.io" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.io.source" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.jaspi"/>
+<plugin id="org.eclipse.jetty.jaspi.source"/>
+<plugin id="org.eclipse.jetty.jmx"/>
+<plugin id="org.eclipse.jetty.jmx.source"/>
+<plugin id="org.eclipse.jetty.jndi"/>
+<plugin id="org.eclipse.jetty.jndi.source"/>
+<plugin id="org.eclipse.jetty.monitor"/>
+<plugin id="org.eclipse.jetty.monitor.source"/>
+<plugin id="org.eclipse.jetty.nested"/>
+<plugin id="org.eclipse.jetty.nested.source"/>
+<plugin id="org.eclipse.jetty.osgi.boot"/>
+<plugin id="org.eclipse.jetty.osgi.boot.jsp"/>
+<plugin id="org.eclipse.jetty.osgi.boot.jsp.source"/>
+<plugin id="org.eclipse.jetty.osgi.boot.source"/>
+<plugin id="org.eclipse.jetty.osgi.boot.warurl"/>
+<plugin id="org.eclipse.jetty.osgi.boot.warurl.source"/>
+<plugin id="org.eclipse.jetty.osgi.httpservice"/>
+<plugin id="org.eclipse.jetty.osgi.httpservice.source"/>
+<plugin id="org.eclipse.jetty.plus"/>
+<plugin id="org.eclipse.jetty.plus.source"/>
+<plugin id="org.eclipse.jetty.policy"/>
+<plugin id="org.eclipse.jetty.rewrite"/>
+<plugin id="org.eclipse.jetty.rewrite.source"/>
+<plugin id="org.eclipse.jetty.security" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.security.source" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.server" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.server.source" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.servlet"/>
+<plugin id="org.eclipse.jetty.servlet.source"/>
+<plugin id="org.eclipse.jetty.servlets"/>
+<plugin id="org.eclipse.jetty.servlets.source"/>
+<plugin id="org.eclipse.jetty.util" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.util.source" version="8.1.8.v20121106"/>
+<plugin id="org.eclipse.jetty.webapp"/>
+<plugin id="org.eclipse.jetty.webapp.source"/>
+<plugin id="org.eclipse.jetty.websocket"/>
+<plugin id="org.eclipse.jetty.websocket.source"/>
+<plugin id="org.eclipse.jetty.xml"/>
+<plugin id="org.eclipse.jetty.xml.source"/>
+<plugin id="org.eclipse.osgi" version="3.8.1.v20120830-144521"/>
+<plugin id="org.eclipse.osgi.services" version="3.3.100.v20120522-1822"/>
+<plugin id="org.hamcrest.core"/>
+<plugin id="org.json" version="1.0.0.v201011060100"/>
+<plugin id="org.junit"/>
+<plugin id="org.junit4"/>
+<plugin id="org.jvnet.staxex.stax-ex" version="1.7.6"/>
+<plugin id="org.jvnet.staxex.stax-ex" version="1.7.4"/>
+<plugin id="org.jvnet.staxex.stax-ex.source" version="1.7.4"/>
+<plugin id="org.jvnet.staxex.stax-ex.source" version="1.7.6"/>
+<plugin id="org.objectweb.asm"/>
+<plugin id="org.objectweb.asm.all"/>
+<plugin id="org.objectweb.asm.all.source"/>
+<plugin id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+<plugin id="org.slf4j.jcl" version="1.7.2.v20121108-1250"/>
+<plugin id="org.slf4j.jul"/>
+<plugin id="org.slf4j.log4j"/>
+<plugin id="org.springframework.aop" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.aop.source" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.asm" version="3.1.4.RELEASE"/>
+<plugin id="org.springframework.asm.source" version="3.1.4.RELEASE"/>
+<plugin id="org.springframework.beans" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.beans.source" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.context" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.context.source" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.context.support" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.context.support.source" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.core" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.core.source" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.expression" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.expression.source" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.jdbc"/>
+<plugin id="org.springframework.jdbc.source"/>
+<plugin id="org.springframework.orm"/>
+<plugin id="org.springframework.orm.source"/>
+<plugin id="org.springframework.osgi.core" version="1.2.1"/>
+<plugin id="org.springframework.osgi.core.source" version="1.2.1"/>
+<plugin id="org.springframework.osgi.extender" version="1.2.1"/>
+<plugin id="org.springframework.osgi.extender.source" version="1.2.1"/>
+<plugin id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
+<plugin id="org.springframework.osgi.extensions.annotations.source" version="1.2.1"/>
+<plugin id="org.springframework.osgi.io" version="1.2.1"/>
+<plugin id="org.springframework.osgi.io.source" version="1.2.1"/>
+<plugin id="org.springframework.osgi.web"/>
+<plugin id="org.springframework.osgi.web.source"/>
+<plugin id="org.springframework.oxm"/>
+<plugin id="org.springframework.oxm.source"/>
+<plugin id="org.springframework.retry"/>
+<plugin id="org.springframework.retry.source"/>
+<plugin id="org.springframework.transaction" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.transaction.source" version="3.2.4.RELEASE"/>
+<plugin id="org.springframework.web"/>
+<plugin id="org.springframework.web.servlet"/>
+<plugin id="org.springframework.web.servlet.source"/>
+<plugin id="org.springframework.web.source"/>
+<plugin id="org.springframework.ws"/>
+<plugin id="org.springframework.ws.source"/>
+<plugin id="org.springframework.ws.xml"/>
+<plugin id="org.springframework.ws.xml.source"/>
+<plugin id="spring-integration-core"/>
+<plugin id="spring-integration-core.source"/>
+<plugin id="spring-integration-file"/>
+<plugin id="spring-integration-file.source"/>
+<plugin id="spring-integration-http"/>
+<plugin id="spring-integration-http.source"/>
+<plugin id="spring-integration-jdbc"/>
+<plugin id="spring-integration-jdbc.source"/>
+<plugin id="spring-integration-jpa"/>
+<plugin id="spring-integration-jpa.source"/>
+<plugin id="spring-integration-stream"/>
+<plugin id="spring-integration-stream.source"/>
+<plugin id="spring-integration-ws"/>
+<plugin id="spring-integration-ws.source"/>
+<plugin id="spring-integration-xml"/>
+<plugin id="spring-integration-xml.source"/>
+<plugin id="stax2-api"/>
+<plugin id="stax2-api.source"/>
+<plugin id="woodstox-core-asl"/>
+<plugin id="woodstox-core-asl.source"/>
+<plugin id="xml-apis" version="1.3.03"/>
+</includeBundles>
+</target>
